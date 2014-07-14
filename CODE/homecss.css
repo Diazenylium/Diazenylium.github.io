@@ -1,0 +1,48 @@
+html{
+	font-size:0;
+}
+
+body{
+	font-family: 'Nunito', sans-serif;
+	background-color:#353B40;
+}
+header{
+	background-color:#353B40;
+	position: absolute;
+	left:.1%;
+	right:.1%;
+	width:100%;
+	top:0;
+	z-index:50;
+	border-bottom:10px solid #353B40;
+}
+.head{
+	transition: all .5s ease;
+	display:inline-block;
+	border:none;
+	width:33.3%;
+	height:40px;
+	font-size:16px;
+	margin:0;
+	color:white;
+	text-align:center;
+	padding-top: 12.5px;
+	background-color:#353B40;
+}
+.head:hover{
+	transition: all .5s ease;
+	background-color:#eee;
+	color:#353B40;
+}
+.hometitle{
+	margin:0 auto;
+	background-color:white;
+	background-image:url('http://i.imgur.com/HwGWVU8.jpg');
+	background-position:center 25px;
+	background-repeat:no-repeat;
+	background-size:80% auto;
+	height:330px;
+	max-width:600px;
+	box-shadow:inset 0px 15px 30px rgba(0,0,0,1);
+	opacity:.7;
+}
