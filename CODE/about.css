@@ -1,0 +1,90 @@
+html{
+  font-size:0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color:#361D00;
+  margin:0;
+}
+header{
+  background-color:#361D00;
+  position: absolute;
+  left:.1%;
+  right:.1%;
+  width:100%;
+  top:0;
+  z-index:50;
+}
+button{
+  font-family:"open sans", sans-serif;
+}
+.head, .about{
+  font-weight:normal;
+  transition: all .5s ease;
+  display:inline-block;
+  border:none;
+  width:33.3%;
+  height:40px;
+  font-size:16px;
+  margin:0;
+  color:#361D00;
+  text-align:center;
+  background-color:#FADEBE;
+  box-shadow: inset 0 -5px 25px rgba(77,41,0,0.6);
+}
+.head:hover, .about, .learn:hover{
+  transition: all .5s ease;
+  background-color:#361D00;
+  color:#FFF2E3;
+  box-shadow: inset 0 -5px 25px rgba(250,222,190,0.6);
+}
+.about {
+  font-weight:bold;
+}
+/*OTHER STUFF STARTS HERE*/
+.stuff{
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+h1{
+  font-family:"oswald", sans-serif;
+  font-size:24px;
+}
+
+
+/*OTHER STUFF ENDS HERE*/
+footer{
+  position:absolute;
+  bottom:0;
+  padding:0;
+  height:150px;
+  width:100%;
+}
+
+.copy, .learn{
+  width:97%;
+  height:40px;
+  position: absolute;
+  padding:20px 1.5% 0 1.5%;
+  margin:0;
+  bottom:0;
+  background-color:#FADEBE;
+  color:#361D00;
+  font-size:13px;
+}
+.learn{
+  width:75px;
+  background-color:transparent;
+  right:0;
+  font-size:13px;
+  color:#361D00;
+  z-index:3;
+  text-align:right;
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+  color:#FFF2E3;
+}

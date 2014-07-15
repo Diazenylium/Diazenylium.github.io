@@ -16,7 +16,11 @@ header{
 	top:0;
 	z-index:50;
 }
+button{
+	font-family:"open sans", sans-serif;
+}
 .head, .home{
+	font-weight:normal;
 	transition: all .5s ease;
 	display:inline-block;
 	border:none;
@@ -26,7 +30,6 @@ header{
 	margin:0;
 	color:#361D00;
 	text-align:center;
-	padding-top: 12.5px;
 	background-color:#FADEBE;
 	box-shadow: inset 0 -5px 25px rgba(77,41,0,0.6);
 }
@@ -124,7 +127,7 @@ footer{
 	text-align:right;
 }
 a{
-	color:#BF6C00;
+	color:#361D00;
 	text-decoration:none;
 }
 a:hover{
@@ -132,6 +135,10 @@ a:hover{
 }
 
 @media screen and (min-width:600px){
+	.head, .home{
+		font-size:18px;
+		height:60px;
+	}
 	.homeraptor{
 		height:520px;
 		max-width:1000px;
@@ -139,5 +146,36 @@ a:hover{
 	}
 	.intro, .purpose{
 		max-width:800px;
+		font-size:18px;
+		margin-bottom: 30px;
+	}
+	.purpose{
+		margin-bottom: 100px;
+	}
+	.xkcd{
+		max-width:800px;
+	}
+	.hometitle{
+		width:370px;
+		height:200px;
+		margin-left: 40px;
+		padding: 0 20px 10px 25px;
+	}
+	h1{
+		font-size:40px;
+	}
+	h3{
+		font-size:25px;
+		font-weight:normal;
+		font-style:italic;
+	}
+	.house{
+		max-width:1000px;
+	}
+	.learn, .copy{
+		font-size:18px;
+	}
+	.learn{
+		width:110px;
 	}
 }
