@@ -7,10 +7,9 @@ body{
   margin:0;
 }
 header{
+  font-size:0;
   background-color:#361D00;
   position: absolute;
-  left:.1%;
-  right:.1%;
   width:100%;
   top:0;
   z-index:50;
@@ -49,10 +48,14 @@ button{
   height:100%;
   margin-bottom: 60px;
 }
-h1, h2, p{
+h1, h2, .skills, .aboutintro, .facts{
   display:block;
   margin: 0 auto;
   max-width:600px;
+  margin-bottom: 20px;
+}
+.skills, .aboutintro, .facts{
+  text-indent:50px;
 }
 h1{
   font-family:"oswald", sans-serif;
@@ -79,7 +82,7 @@ footer{
   padding:0;
 }
 .copy, .learn{
-  width:100%;
+  width:97%;
   height:40px;
   position: absolute;
   padding:20px 1.5% 0 1.5%;
