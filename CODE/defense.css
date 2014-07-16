@@ -38,7 +38,7 @@ button{
   background-color:#FADEBE;
   box-shadow: inset 0 0 25px rgba(77,41,0,0.6);
 }
-.head:hover, .defense, .learn:hover{
+.head:hover, .defense{
   transition: background .5s ease,
               color .5s ease;
   background-color:#361D00;
@@ -103,6 +103,16 @@ p.caption{
   width:100%;
   margin-bottom:20px;
 }
+
+.door{
+  width:100%;
+  background-color:rgba(255,255,255,.5);
+  box-shadow:inset 0 0 40px #2E1A00;
+}
+.door img{
+  width:100%;
+  padding:10px 0 10px 0;
+}
 /*OTHER STUFF ENDS HERE*/
 footer{
   position: relative;
@@ -111,7 +121,7 @@ footer{
   background-color:#FADEBE;
   padding:0;
 }
-.copy, .learn{
+.copy{
   position: absolute;
   bottom:0;
   height:35px;
@@ -122,17 +132,6 @@ footer{
   font-size:13px;
 }
 
-.learn{
-  transition: background .5s ease,
-              color .5s ease;
-  width:75px;
-  background-color:transparent;
-  right:0;
-  font-size:13px;
-  color:#361D00;
-  z-index:3;
-  text-align:right;
-}
 a{
   text-decoration:none;
 }
