@@ -38,7 +38,7 @@ button{
   background-color:#FADEBE;
   box-shadow: inset 0 0 25px rgba(77,41,0,0.6);
 }
-.head:hover, .about, .learn:hover{
+.head:hover, .about{
   transition: background .5s ease,
               color .5s ease;
   background-color:#361D00;
@@ -113,7 +113,7 @@ footer{
   position: relative;
   padding:0;
 }
-.copy, .learn{
+.copy{
   width:97%;
   height:35px;
   position: absolute;
@@ -124,18 +124,6 @@ footer{
   color:#361D00;
   font-size:13px;
 }
-.learn{
-  transition: background .5s ease,
-              color .5s ease;
-  width:75px;
-  background-color:transparent;
-  right:0;
-  font-size:13px;
-  color:#361D00;
-  z-index:3;
-  text-align:right;
-}
-
 a{
   text-decoration:none;
 }
@@ -199,15 +187,12 @@ a:hover{
   h1, h2, .skills, .aboutintro, .facts{
     max-width:800px;
   }
-  .copy, .learn{
+  .copy{
     height:40px;
     padding-top:10px;
     font-size:18px;
     position: fixed;
     bottom:0;
-  }
-  .learn{
-    width:100px;
   }
 }
 @media screen and (min-width:700px){

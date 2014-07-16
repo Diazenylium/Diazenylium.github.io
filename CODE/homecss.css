@@ -49,7 +49,7 @@ button{
 .head{
 	width:100%;
 }
-.head:hover, .home, .learn:hover{
+.head:hover, .home{
 	transition: background .5s ease,
               color .5s ease;
 	background-color:#2E1A00;
@@ -124,7 +124,7 @@ footer{
 	padding:0;
 }
 
-.copy, .learn{
+.copy{
 	width:97%;
 	height:30px;
 	position: absolute;
@@ -135,18 +135,6 @@ footer{
 	color:#361D00;
 	font-size:13px;
 }
-.learn{
-	transition: background .5s ease,
-              color .5s ease;
-	width:75px;
-	background-color:transparent;
-	right:0;
-	font-size:13px;
-	color:#361D00;
-	z-index:3;
-	text-align:right;
-}
-
 @media screen and (min-width:600px){
 	header{
 		position: fixed;
@@ -194,15 +182,12 @@ footer{
 	.house{
 		max-width:1000px;
 	}
-	.learn, .copy{
+	.copy{
 		padding:15px 20px 0 20px;
 		height:40px;
 		bottom:0;
 		font-size:18px;
 		position: fixed;
 		bottom:0;
-	}
-	.learn{
-		width:110px;
 	}
 }
