@@ -1,0 +1,87 @@
+html{
+  font-size:0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  background-color:#2E1A00;
+}
+header{
+  font-size:0;
+  background-color:#361D00;
+  position: absolute;
+  width:100%;
+  top:0;
+  z-index:50;
+}
+
+form{
+  display:inline-block;
+  width:33.3%;
+}
+
+button{
+  font-family:"open sans", sans-serif;
+}
+.head, .defense{
+  font-weight:normal;
+  transition: background .5s ease,
+              color .5s ease;
+  display:inline-block;
+  border:none;
+  height:40px;
+  font-size:16px;
+  margin:0;
+  color:#361D00;
+  text-align:center;
+  background-color:#FADEBE;
+  box-shadow: inset 0 0 25px rgba(77,41,0,0.6);
+}
+.head:hover, .defense, .learn:hover{
+  transition: background .5s ease,
+              color .5s ease;
+  background-color:#361D00;
+  color:#FFF2E3;
+  box-shadow: inset 0 0 25px rgba(250,222,190,0.6);
+}
+.head{
+  width:100%;
+}
+.defense {
+  font-weight:bold;
+  width:100%;
+}
+
+/*OTHER STUFF STARTS HERE*/
+.stuff{
+  margin-top: 10px;
+  background-image:linear-gradient(#2E1A00,#A1845F);
+}
+
+/*OTHER STUFF ENDS HERE*/
+footer{
+  padding:0;
+}
+.copy, .learn{
+  width:97%;
+  height:35px;
+  position: absolute;
+  padding:15px 1.5% 5px 1.5%;
+  margin:0;
+  bottom:0;
+  background-color:#FADEBE;
+  color:#361D00;
+  font-size:13px;
+}
+.learn{
+  transition: background .5s ease,
+              color .5s ease;
+  width:75px;
+  background-color:transparent;
+  right:0;
+  font-size:13px;
+  color:#361D00;
+  z-index:3;
+  text-align:right;
+}

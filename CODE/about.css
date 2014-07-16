@@ -60,7 +60,7 @@ button{
   height:100%;
   margin-bottom: 40px;
 }
-h1, h2, .skills, .aboutintro, .facts, .skeleton, .facediv{
+h1, h2, .skills, .aboutintro, .facts, .face, .hunt{
   display:block;
   margin: 0 auto;
   max-width:600px;
@@ -86,33 +86,26 @@ p{
   color:#FFF2E3;
   line-height:200%;
 }
-.skeleton{
-  background-image:url('http://www.ucmp.berkeley.edu/diapsids/saurischia/velociraptor2_skrep.jpg');
-  background-size:95% auto;
-  background-position:center;
+.face, .hunt{
+  height:300px;
+  width:100%;
+  max-width:600px;
+}
+.face{
+  background-image:url('http://i.imgur.com/XbMX1og.jpg');
+  background-size:cover;
   background-repeat:no-repeat;
   background-color:rgba(255,255,255,1);
-  width:100%;
-  height:200px;
-  max-width:600px;
   opacity:.8;
   box-shadow:inset 0px 0px 15px black;
 }
-.facediv{
-  height:20%;
-  background: white;
-  max-width:600px;
-  box-shadow:inset 0 0 15px black;
+.hunt{
+  background-image:url("http://4.bp.blogspot.com/-IaayrdHDISs/UbjdYe65hdI/AAAAAAAAAeg/jgJhPKdogJU/s1600/the_velociraptor_hunting_dance_by_ewilloughby-d68f94a.jpg");
+  background-size:100% auto;
+  background-position:center;
+  background-repeat:no-repeat;
   opacity:0.8;
-}
-.face{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    display:inline-block;
-    margin: 10% 0 10% 10px;
-    width:93%;
+  box-shadow:inset 0px 0px 25px black;
 }
 
 /*OTHER STUFF ENDS HERE*/
@@ -122,9 +115,9 @@ footer{
 }
 .copy, .learn{
   width:97%;
-  height:40px;
+  height:35px;
   position: absolute;
-  padding:20px 1.5% 0 1.5%;
+  padding:0px 1.5% 5px 1.5%;
   margin:0;
   bottom:0;
   background-color:#FADEBE;
@@ -142,6 +135,7 @@ footer{
   z-index:3;
   text-align:right;
 }
+
 a{
   text-decoration:none;
 }
@@ -149,6 +143,25 @@ a:hover{
   color:#FFF2E3;
 }
 
+@media screen and (max-width:450px){
+  .face{
+    height:240px;
+  }
+  .hunt{
+    height:270px;
+  }
+}
+@media screen and (min-width:500px){
+  .hunt{
+    height:370px;
+  }
+}
+
+@media screen and (min-width:570px){
+  .hunt{
+    height:440px;
+  }
+}
 @media screen and (min-width:600px){
   header{
     position: fixed;
@@ -171,15 +184,20 @@ a:hover{
     margin-top: 60px;
     padding:20px;
   }
-  .skeleton, .facediv{
-    max-width:900px;
-    box-shadow:inset 0 0 25px black;;
+  .face, .hunt{
+    box-shadow:inset 0 0 45px black;;
   }
-  .skeleton{
-    height:420px;
+  .face{
+    max-width:1000px;
+    background-size:1000px;
+    height:400px;
+  }
+  .hunt{
+    max-width:900px;
+    background-size:cover;
   }
   h1, h2, .skills, .aboutintro, .facts{
-    max-width:700px;
+    max-width:800px;
   }
   .copy, .learn{
     height:40px;
@@ -192,3 +210,14 @@ a:hover{
     width:100px;
   }
 }
+@media screen and (min-width:700px){
+  .hunt{
+    height:600px;
+  }
+}
+@media screen and (min-width:800px){
+  .hunt{
+    height:700px;
+  }
+}
+
