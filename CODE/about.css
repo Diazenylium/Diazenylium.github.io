@@ -82,7 +82,7 @@ h2{
 p{
   display:block;
   margin: 0 auto;
-  font-size:16px;
+  font-size:15px;
   color:#FFF2E3;
   line-height:200%;
 }
@@ -97,7 +97,7 @@ p{
   background-repeat:no-repeat;
   background-color:rgba(255,255,255,1);
   opacity:.8;
-  box-shadow:inset 0px 0px 15px black;
+  box-shadow:inset 0px 0px 15px #2E1A00;
 }
 .hunt{
   background-image:url("http://4.bp.blogspot.com/-IaayrdHDISs/UbjdYe65hdI/AAAAAAAAAeg/jgJhPKdogJU/s1600/the_velociraptor_hunting_dance_by_ewilloughby-d68f94a.jpg");
@@ -105,7 +105,7 @@ p{
   background-position:center;
   background-repeat:no-repeat;
   opacity:0.8;
-  box-shadow:inset 0px 0px 25px black;
+  box-shadow:inset 0px 0px 25px #2E1A00;
 }
 
 /*OTHER STUFF ENDS HERE*/
