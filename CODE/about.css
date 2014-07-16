@@ -15,6 +15,12 @@ header{
   top:0;
   z-index:50;
 }
+
+form{
+  display:inline-block;
+  width:33.3%;
+}
+
 button{
   font-family:"open sans", sans-serif;
 }
@@ -24,7 +30,6 @@ button{
               color .5s ease;
   display:inline-block;
   border:none;
-  width:33.3%;
   height:40px;
   font-size:16px;
   margin:0;
@@ -40,8 +45,12 @@ button{
   color:#FFF2E3;
   box-shadow: inset 0 0 25px rgba(250,222,190,0.6);
 }
+.head{
+  width:100%;
+}
 .about {
   font-weight:bold;
+  width:33.3%;
 }
 /*OTHER STUFF STARTS HERE*/
 .stuff{
@@ -49,7 +58,7 @@ button{
   margin-top: 40px;
   padding:10px;
   height:100%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 h1, h2, .skills, .aboutintro, .facts, .skeleton, .facediv{
   display:block;
@@ -75,7 +84,7 @@ p{
   margin: 0 auto;
   font-size:16px;
   color:#FFF2E3;
-  line-height:180%;
+  line-height:200%;
 }
 .skeleton{
   background-image:url('http://www.ucmp.berkeley.edu/diapsids/saurischia/velociraptor2_skrep.jpg');
@@ -101,8 +110,6 @@ p{
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
     display:inline-block;
     margin: 10% 0 10% 10px;
     width:93%;
@@ -158,7 +165,7 @@ a:hover{
   }
   .head, .about{
     font-size:18px;
-    height:60px;
+    height:40px;
   }
   .stuff{
     margin-top: 60px;
@@ -175,7 +182,8 @@ a:hover{
     max-width:700px;
   }
   .copy, .learn{
-    height:50px;
+    height:40px;
+    padding-top:10px;
     font-size:18px;
     position: fixed;
     bottom:0;
