@@ -130,6 +130,16 @@ a{
 a:hover{
   color:#FFF2E3;
 }
+.easter{
+  position: fixed;
+  bottom:80px;
+  width:80px;
+  opacity:.05;
+}
+.easter:hover{
+  transition:opacity .35s ease;
+  opacity:.5;
+}
 
 @media screen and (max-width:450px){
   .face{
