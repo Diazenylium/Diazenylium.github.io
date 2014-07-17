@@ -135,6 +135,16 @@ footer{
 	color:#361D00;
 	font-size:13px;
 }
+.easter{
+  position: fixed;
+  bottom:80px;
+  width:80px;
+  opacity:.05;
+}
+.easter:hover{
+  transition:opacity .35s ease;
+  opacity:.5;
+}
 @media screen and (min-width:600px){
 	header{
 		position: fixed;
