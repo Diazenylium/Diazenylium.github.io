@@ -1,0 +1,63 @@
+
+div {
+  -webkit-animation-name: raptor;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration:3s;
+  -webkit-animation-direction: alternate;
+}
+div:first-of-type{
+
+}
+div:nth-of-type(2){
+  position:absolute;
+  top:130px;
+  -webkit-animation-duration:4s;
+}
+
+div:nth-of-type(3){
+  position:absolute;
+  top:250px;
+  -webkit-animation-duration:2.5s;
+}
+img{
+  width:300px;
+}
+div:nth-of-type(4){
+  -webkit-animation-duration:2s;
+}
+div:nth-of-type(5){
+  position:absolute;
+  top:190px;
+  -webkit-animation-duration:3.5s;
+}
+div:nth-of-type(6){
+  position:absolute;
+  top:260px;
+  -webkit-animation-duration:4.5s;
+}
+div:nth-of-type(7){
+  position:absolute;
+  top:280px;
+  -webkit-animation-duration:2.75s;
+}
+div:nth-of-type(8){
+  position:absolute;
+  top:210px;
+  -webkit-animation-duration:3.25s;
+}
+
+
+@-webkit-keyframes raptor{
+  0%{
+    -webkit-transform:rotate(-400deg);
+    margin-left:0;
+  }
+  100%{
+    -webkit-transform:rotate(360deg);
+    margin-left:60%;
+  }
+}
+
+h1{
+  font-family:"open sans", sans-serif;
+}
