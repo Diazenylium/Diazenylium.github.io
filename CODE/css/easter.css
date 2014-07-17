@@ -60,6 +60,10 @@ table {
   background-position: 0 0;
 }
 
+body {
+  background-color: #fadebe;
+}
+
 div {
   animation-name: raptor;
   animation-iteration-count: infinite;
@@ -135,6 +139,7 @@ div:nth-of-type(8) {
   }
 }
 h1 {
+  text-shadow: 0px 2px 5px #361d00;
   margin: 20px;
   font-size: 36px;
   color: #361d00;

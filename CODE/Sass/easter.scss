@@ -1,6 +1,8 @@
 @import "library";
 @import "reset";
-
+body{
+  background-color:$tan;
+}
 div {
   @include anim;
 }
@@ -58,6 +60,7 @@ div:nth-of-type(8){
 }
 
 h1{
+  text-shadow:0px 2px 5px $dkbrown;
   margin:20px;
   font-size:36px;
   color:$dkbrown;
