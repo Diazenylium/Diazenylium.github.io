@@ -1,63 +1,9 @@
+@import "reset";
+@import "library";
+
 html{
 	font-size:0;
-}
-
-body{
-	font-family: 'Open Sans', sans-serif;
-	background-color:#361D00;
-	margin:0;
-}
-header{
-	background-color:#361D00;
-	position: absolute;
-	left:.1%;
-	right:.1%;
-	width:100%;
-	top:0;
-	z-index:50;
-}
-form{
-	display:inline-block;
-	width:33.3%;
-}
-button{
-	display:inline-block;
-	font-family:"open sans", sans-serif;
-	width:33.3%;
-}
-.stuff{
-	margin-top: 10px;
-	background-image:linear-gradient(#2E1A00,#A1845F);
-}
-.head, .home{
-	font-weight:normal;
-	transition: background .5s ease,
-              color .5s ease;
-	display:inline-block;
-	border:none;
-	height:40px;
-	font-size:16px;
-	margin:0;
-	color:#361D00;
-	text-align:center;
-	background-color:#FADEBE;
-	box-shadow: inset 0 0 25px rgba(77,41,0,0.6);
-}
-.home{
-	width:33.3%;
-}
-.head{
-	width:100%;
-}
-.head:hover, .home{
-	transition: background .5s ease,
-              color .5s ease;
-	background-color:#2E1A00;
-	color:#FFF2E3;
-	box-shadow: inset 0 0 25px rgba(250,222,190,0.6);
-}
-.home{
-	font-weight:bold;
+	@extend %header;
 }
 
 .homeraptor{
@@ -69,12 +15,13 @@ button{
 	background-size:80% auto;
 	height:350px;
 	max-width:600px;
-	box-shadow:inset 0px 5px 30px #2E1A00;
+	box-shadow:inset 0px 5px 30px $blackbrown;
 	opacity:.7;
 }
 
 h1{
-	padding-top: 40px;
+	padding-top: 50px;
+	padding-bottom: 20px;
 	font-size:28px;
 }
 
@@ -99,14 +46,14 @@ h3{
 	display:block;
 	margin:0 auto;
 	font-size:15px;
-	color:#FFF2E3;
+	color:$ptext;
 	line-height:200%;
 	text-indent:50px;
 	padding:10px 10px;
 	max-width:600px;
 }
 p.purpose{
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 .xkcd{
 	margin:10px auto;
@@ -125,26 +72,20 @@ footer{
 }
 
 .copy{
-	width:97%;
+	width:100%;
 	height:30px;
 	position: absolute;
 	padding:10px 1.5% 0 1.5%;
 	margin:0;
 	bottom:0;
-	background-color:#FADEBE;
-	color:#361D00;
+	background-color:$tan;
+	color:$dkbrown;
 	font-size:13px;
 }
 .easter{
-  position: fixed;
-  bottom:80px;
-  width:80px;
-  opacity:.05;
+	@extend %easter;
 }
-.easter:hover{
-  transition:opacity .35s ease;
-  opacity:.5;
-}
+
 @media screen and (min-width:600px){
 	header{
 		position: fixed;
@@ -166,8 +107,8 @@ footer{
 		border-top-left-radius:0;
 		border-top-right-radius:0;
 		margin-top: 0;
-		width:370px;
-		height:200px;
+		width:400px;
+		height:180px;
 		margin-left: 40px;
 		padding: 0 20px 10px 25px;
 	}
@@ -183,6 +124,7 @@ footer{
 		max-width:800px;
 	}
 	h1{
+		padding-bottom: 40px;
 		font-size:40px;
 	}
 	h3{
@@ -192,12 +134,14 @@ footer{
 	.house{
 		max-width:1000px;
 	}
+	footer, .copy{
+		position: fixed;
+		bottom:0;
+	}
 	.copy{
-		padding:15px 20px 0 20px;
+		padding:10px 10px;
 		height:40px;
 		bottom:0;
 		font-size:18px;
-		position: fixed;
-		bottom:0;
 	}
 }

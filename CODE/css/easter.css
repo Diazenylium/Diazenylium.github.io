@@ -1,0 +1,153 @@
+/*
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+div {
+  animation-name: raptor;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  -webkit-animation-name: raptor;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+  -moz-animation-name: raptor;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 3s;
+  -moz-animation-direction: alternate;
+  -ms-animation-name: raptor;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-duration: 3s;
+  -ms-animation-direction: alternate;
+}
+
+div:nth-of-type(2) {
+  position: absolute;
+  top: 130px;
+  -webkit-animation-duration: 4s;
+}
+
+div:nth-of-type(3) {
+  position: absolute;
+  top: 250px;
+  -webkit-animation-duration: 2.5s;
+}
+
+img {
+  width: 500px;
+}
+
+div:nth-of-type(4) {
+  -webkit-animation-duration: 2s;
+}
+
+div:nth-of-type(5) {
+  position: absolute;
+  top: 190px;
+  -webkit-animation-duration: 3.5s;
+}
+
+div:nth-of-type(6) {
+  position: absolute;
+  top: 260px;
+  -webkit-animation-duration: 4.5s;
+}
+
+div:nth-of-type(7) {
+  position: absolute;
+  top: 280px;
+  -webkit-animation-duration: 2.75s;
+}
+
+div:nth-of-type(8) {
+  position: absolute;
+  top: 210px;
+  -webkit-animation-duration: 3.25s;
+}
+
+@-webkit-keyframes raptor {
+  0% {
+    -webkit-transform: rotate(-400deg);
+    margin-left: 0;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    margin-left: 60%;
+  }
+}
+h1 {
+  margin: 20px;
+  font-size: 36px;
+  color: #361d00;
+  font-family: "open sans", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    left: -50px;
+  }
+
+  img {
+    width: 300px;
+    margin-bottom: 100px;
+  }
+}

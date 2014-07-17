@@ -1,80 +1,69 @@
+@import "reset";
+@import "library";
+
 html{
   font-size:0;
+  @extend %header;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
-  margin:0;
-  background-color:#2E1A00;
-}
-header{
-  font-size:0;
-  background-color:#361D00;
-  position: absolute;
-  width:100%;
-  top:0;
-  z-index:50;
-}
+// body{
+//   font-family: 'Open Sans', sans-serif;
+//   margin:0;
+//   background-color:$blackbrown;
+// }
+// header{
+//   font-size:0;
+//   background-color:$dkbrown;
+//   position: absolute;
+//   width:100%;
+//   top:0;
+//   z-index:50;
+// }
 
-form{
-  display:inline-block;
-  width:33.3%;
-}
+// form{
+//   display:inline-block;
+//   width:33.3%;
+// }
 
-button{
-  font-family:"open sans", sans-serif;
-}
-.head, .about{
-  font-weight:normal;
-  transition: background .5s ease,
-              color .5s ease;
-  display:inline-block;
-  border:none;
-  height:40px;
-  font-size:16px;
-  margin:0;
-  color:#361D00;
-  text-align:center;
-  background-color:#FADEBE;
-  box-shadow: inset 0 0 25px rgba(77,41,0,0.6);
-}
-.head:hover, .about{
-  transition: background .5s ease,
-              color .5s ease;
-  background-color:#361D00;
-  color:#FFF2E3;
-  box-shadow: inset 0 0 25px rgba(250,222,190,0.6);
-}
-.head{
-  width:100%;
-}
-.about {
-  font-weight:bold;
-  width:33.3%;
-}
+// button{
+//   font-family:"open sans", sans-serif;
+// }
+// .head:hover, .x{
+//   transition: background .5s ease,
+//               color .5s ease;
+//   background-color:$dkbrown;
+//   color:$ptext;
+//   box-shadow: inset 0 0 25px rgba(250,222,190,0.6);
+// }
+// .head{
+//   @extend %headx;
+//   width:100%;
+// }
+// .x {
+//   @extend %headx;
+//   font-weight:bold;
+//   width:33.3%;
+// }
 /*OTHER STUFF STARTS HERE*/
 .stuff{
-  background-image:linear-gradient(#2E1A00,#A1845F);
+  background-image:$stuff;
   margin-top: 40px;
   padding:10px;
   height:100%;
-  margin-bottom: 40px;
-}
-h1, h2, .skills, .aboutintro, .facts, .face, .hunt{
-  display:block;
-  margin: 0 auto;
-  max-width:600px;
   margin-bottom: 20px;
 }
 .skills, .aboutintro, .facts{
+  @extend %aboutmobile;
   text-indent:50px;
 }
 h1{
+  @extend %aboutmobile;
   font-family:"oswald", sans-serif;
   font-size:32px;
   color:rgba(255,255,255,.6);
 }
 h2{
+  @extend %aboutmobile;
   color:rgba(255,255,255,.6);
   font-size:22px;
   font-family:"oswald", sans-serif;
@@ -83,10 +72,11 @@ p{
   display:block;
   margin: 0 auto;
   font-size:15px;
-  color:#FFF2E3;
+  color:$ptext;
   line-height:200%;
 }
 .face, .hunt{
+  @extend %aboutmobile;
   height:300px;
   width:100%;
   max-width:600px;
@@ -97,7 +87,7 @@ p{
   background-repeat:no-repeat;
   background-color:rgba(255,255,255,1);
   opacity:.8;
-  box-shadow:inset 0px 0px 15px #2E1A00;
+  box-shadow:inset 0px 0px 15px $blackbrown;
 }
 .hunt{
   background-image:url("http://4.bp.blogspot.com/-IaayrdHDISs/UbjdYe65hdI/AAAAAAAAAeg/jgJhPKdogJU/s1600/the_velociraptor_hunting_dance_by_ewilloughby-d68f94a.jpg");
@@ -105,7 +95,7 @@ p{
   background-position:center;
   background-repeat:no-repeat;
   opacity:0.8;
-  box-shadow:inset 0px 0px 25px #2E1A00;
+  box-shadow:inset 0px 0px 25px $blackbrown;
 }
 
 /*OTHER STUFF ENDS HERE*/
@@ -121,26 +111,18 @@ footer{
   padding:0px 1.5% 5px 1.5%;
   margin:0;
   bottom:0;
-  background-color:#FADEBE;
-  color:#361D00;
+  background-color:$tan;
+  color:$dkbrown;
   font-size:13px;
 }
 a{
   text-decoration:none;
 }
 a:hover{
-  color:#FFF2E3;
+  color:$ptext;
 }
 .easter{
-  position: fixed;
-  bottom:80px;
-  left:20px;
-  width:80px;
-  opacity:.05;
-}
-.easter:hover{
-  transition:opacity .35s ease;
-  opacity:.5;
+  @extend %easter;
 }
 
 @media screen and (max-width:450px){
@@ -176,7 +158,7 @@ a:hover{
   p{
     font-size:18px;
   }
-  .head, .about{
+  .head, .x{
     font-size:18px;
     height:40px;
   }
@@ -201,7 +183,7 @@ a:hover{
   }
   .copy{
     height:40px;
-    padding-top:10px;
+    padding: 0 10px;
     font-size:18px;
     position: fixed;
     bottom:0;

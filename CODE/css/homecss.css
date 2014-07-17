@@ -1,0 +1,277 @@
+/*
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.easter {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  width: 80px;
+  opacity: .05;
+}
+.easter:hover {
+  transition: opacity .35s ease;
+  opacity: .5;
+}
+
+html .head, html .x {
+  font-weight: normal;
+  transition: background .5s ease, color .5s ease;
+  display: inline-block;
+  border: none;
+  height: 40px;
+  font-size: 16px;
+  margin: 0;
+  color: #361d00;
+  text-align: center;
+  background-color: #fadebe;
+  box-shadow: inset 0 0 25px rgba(77, 41, 0, 0.6);
+}
+
+html body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #2e1a00;
+}
+html header {
+  font-size: 0;
+  background-color: #361d00;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+}
+html form {
+  display: inline-block;
+  width: 33.3%;
+}
+html button {
+  font-family: "open sans", sans-serif;
+}
+html .head:hover, html .x {
+  transition: background .5s ease, color .5s ease;
+  background-color: #361d00;
+  color: #fff2e3;
+  box-shadow: inset 0 0 25px rgba(250, 222, 190, 0.6);
+}
+html .head {
+  width: 100%;
+}
+html .x {
+  font-weight: bold;
+  width: 33.3%;
+}
+
+html {
+  font-size: 0;
+}
+
+.homeraptor {
+  margin: 0 auto;
+  background-color: white;
+  background-image: url("http://i.imgur.com/HwGWVU8.jpg");
+  background-position: 80px 25px;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  height: 350px;
+  max-width: 600px;
+  box-shadow: inset 0px 5px 30px #2e1a00;
+  opacity: .7;
+}
+
+h1 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+
+h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: 'Oswald', sans-serif;
+}
+
+.hometitle {
+  background-image: radial-gradient(rgba(100, 50, 0, 0.5), #281400);
+  border-radius: 20px;
+  height: 130px;
+  padding: 0 8px 10px 10px;
+  width: 260px;
+  margin-left: 20px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.intro, .purpose {
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #fff2e3;
+  line-height: 200%;
+  text-indent: 50px;
+  padding: 10px 10px;
+  max-width: 600px;
+}
+
+p.purpose {
+  margin-bottom: 30px;
+}
+
+.xkcd {
+  margin: 10px auto;
+  height: auto;
+  max-width: 600px;
+}
+
+.house {
+  opacity: .7;
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  padding: 0;
+}
+
+.copy {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  padding: 10px 1.5% 0 1.5%;
+  margin: 0;
+  bottom: 0;
+  background-color: #fadebe;
+  color: #361d00;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    position: fixed;
+    top: 0;
+  }
+
+  .head, .home {
+    font-size: 18px;
+    height: 40px;
+  }
+
+  .homeraptor {
+    height: 500px;
+    max-width: 1000px;
+    background-position: center -20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 0 0 20px black;
+  }
+
+  .hometitle {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+    width: 400px;
+    height: 180px;
+    margin-left: 40px;
+    padding: 0 20px 10px 25px;
+  }
+
+  .intro, .purpose {
+    max-width: 800px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  p.purpose {
+    padding-bottom: 40px;
+  }
+
+  .xkcd {
+    max-width: 800px;
+  }
+
+  h1 {
+    padding-bottom: 40px;
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  .house {
+    max-width: 1000px;
+  }
+
+  footer, .copy {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .copy {
+    padding: 10px 10px;
+    height: 40px;
+    bottom: 0;
+    font-size: 18px;
+  }
+}

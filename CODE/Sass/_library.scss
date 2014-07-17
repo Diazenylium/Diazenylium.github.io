@@ -1,0 +1,108 @@
+$stuff: linear-gradient(#2E1A00,#A1845F);
+$ptext: #FFF2E3;
+$dkbrown: #361D00;
+$blackbrown:#2E1A00;
+$tan:#FADEBE;
+
+@mixin anim() {
+  animation-name:raptor;
+  animation-iteration-count:infinite;
+  animation-duration:3s;
+  animation-direction:alternate;
+
+  -webkit-animation-name: raptor;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration:3s;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name:raptor;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-duration:3s;
+  -moz-animation-direction:alternate;
+
+  -ms-animation-name:raptor;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-duration:3s;
+  -ms-animation-direction:alternate;
+}
+
+%easter{
+      position: fixed;
+      bottom:80px;
+      left:20px;
+      width:80px;
+      opacity:.05;
+      &:hover{
+      transition:opacity .35s ease;
+      opacity:.5;
+    }
+}
+
+%headx{
+  font-weight:normal;
+  transition: background .5s ease,
+              color .5s ease;
+  display:inline-block;
+  border:none;
+  height:40px;
+  font-size:16px;
+  margin:0;
+  color:$dkbrown;
+  text-align:center;
+  background-color:$tan;
+  box-shadow: inset 0 0 25px rgba(77,41,0,0.6);
+}
+
+%aboutmobile{
+  display:block;
+  margin: 0 auto;
+  max-width:600px;
+  margin-bottom: 20px;
+}
+
+%defmobile{
+  max-width:600px;
+  display:block;
+  margin: 0 auto;
+}
+
+%header{
+  body{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  background-color:$blackbrown;
+  }
+  header{
+    font-size:0;
+    background-color:$dkbrown;
+    position: absolute;
+    width:100%;
+    top:0;
+    z-index:50;
+  }
+
+  form{
+    display:inline-block;
+    width:33.3%;
+  }
+
+  button{
+    font-family:"open sans", sans-serif;
+  }
+  .head:hover, .x{
+    transition: background .5s ease,
+                color .5s ease;
+    background-color:$dkbrown;
+    color:$ptext;
+    box-shadow: inset 0 0 25px rgba(250,222,190,0.6);
+  }
+  .head{
+    @extend %headx;
+    width:100%;
+  }
+  .x {
+    @extend %headx;
+    font-weight:bold;
+    width:33.3%;
+  }
+}

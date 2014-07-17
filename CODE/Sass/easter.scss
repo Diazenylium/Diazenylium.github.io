@@ -1,9 +1,8 @@
+@import "library";
+@import "reset";
 
 div {
-  -webkit-animation-name: raptor;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration:3s;
-  -webkit-animation-direction: alternate;
+  @include anim;
 }
 div:first-of-type{
 
@@ -20,7 +19,7 @@ div:nth-of-type(3){
   -webkit-animation-duration:2.5s;
 }
 img{
-  width:300px;
+  width:500px;
 }
 div:nth-of-type(4){
   -webkit-animation-duration:2s;
@@ -59,5 +58,17 @@ div:nth-of-type(8){
 }
 
 h1{
+  margin:20px;
+  font-size:36px;
+  color:$dkbrown;
   font-family:"open sans", sans-serif;
+}
+@media screen and (max-width:600px){
+  div{
+    left:-50px;
+  }
+  img{
+    width:300px;
+    margin-bottom: 100px;
+  }
 }
